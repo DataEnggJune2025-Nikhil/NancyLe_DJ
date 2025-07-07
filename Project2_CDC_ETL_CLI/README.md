@@ -10,18 +10,6 @@ This project implements an Extract, Transform, Load (ETL) pipeline to fetch COVI
 	* `fetch` command: Automates the ETL process, allowing specification of data limits, chunk sizes, and date ranges.
 	* `query_data` command: Enables querying the loaded data for various insights, such as total cases by state, age group, and sex.
 
-## Project Structure
-
-`Project2_CDC_ETL_CLI/
-├── sql/
-│   └── create_table.sql      # SQL script for creating the database table
-├── api_client.py             # Handles interaction with the CDC API
-├── config.ini                # Configuration file for database and API settings
-├── data_transformer.py       # Contains logic for data cleaning and transformation
-├── main.py                   # Main entry point for the CLI and orchestrates ETL/queries
-├── mysql_handler.py          # Manages MySQL database connections and operations
-└── requirements.txt          # Lists Python dependencies`
-
 ## Setup Instructions
 ### Prerequisites
 	* Python 3.x installed.
