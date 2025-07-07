@@ -30,8 +30,11 @@ To fetch data from the CDC API, transform it, and load it into your MySQL databa
 `python main.py fetch --max-rows 5000 --chunk-size 1000 --start-date 2020-01-01 --end-date 2021-12-31`
 
 `--max-rows`: (Optional) Maximum number of rows to fetch in total. If omitted, it will fetch all available data until the API returns an empty chunk.
+
 `--chunk-size`: (Optional) Number of rows to fetch per API call and process in each chunk (default: 1000).
+
 `--start-date`: (Optional) Filters data to include records from this date onwards (format: YYYY-MM-DD).
+
 `--end-date`: (Optional) Filters data to include records up to this date (format: YYYY-MM-DD).
 
 ## Querying Data
@@ -48,4 +51,5 @@ To query the data already loaded into your MySQL database:
 ### Get Total Cases by Sex
 `python main.py query_data cases_by_sex`
 
+## Created by Nancy Le
 
