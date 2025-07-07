@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS cdc_covid_cases (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    case_month DATE,
+    res_state VARCHAR(50),
+    state_fips_code INT,
+    age_group VARCHAR(50),
+    sex VARCHAR(20),
+    race VARCHAR(100),
+    ethnicity VARCHAR(100),
+    case_positive_specimen_interval INT,
+    case_onset_interval INT,
+    process VARCHAR(50),
+    exposure_yn VARCHAR(20),
+    current_status VARCHAR(50),
+    symptom_status VARCHAR(50),
+    hosp_yn VARCHAR(20),
+    icu_yn VARCHAR(20),
+    death_yn VARCHAR(20),
+    underlying_conditions_yn VARCHAR(20),
+    UNIQUE KEY unique_case (case_month, res_state, age_group, sex, race, ethnicity)
+);
